@@ -32,6 +32,13 @@
 #include "ucx/ucx_utils.h"
 #include "common/list_elem.h"
 
+#ifdef HAVE_CUDA
+
+#include <cuda_runtime.h>
+#include <cufile.h>
+
+#endif
+
 typedef enum {CONN_CHECK, NOTIF_STR, DISCONNECT} ucx_cb_op_t;
 
 struct nixl_ucx_am_hdr {
@@ -54,7 +61,7 @@ class nixlUcxConnection : public nixlBackendConnMD {
 class nixlUcxPrivateMetadata : public nixlBackendMD {
     private:
         nixlUcxMem mem;
-        nixl_blob_t rkeyStr;
+        std::string rkeyStr;
 
     public:
         nixlUcxPrivateMetadata() : nixlBackendMD(true) {
@@ -142,7 +149,7 @@ class nixlUcxEngine : public nixlBackendEngine {
 
         void vramInitCtx();
         void vramFiniCtx();
-        int vramUpdateCtx(void *address, uint32_t  devId, bool &restart_reqd);
+        int vramUpdateCtx(void *address, uint32_t  devId, bool &restart_reqd,uint32_t  world_size,uint32_t  local_rank);
         int vramApplyCtx();
 
         // Threading infrastructure
@@ -174,11 +181,6 @@ class nixlUcxEngine : public nixlBackendEngine {
                            size_t header_length, void *data,
                            size_t length,
                            const ucp_am_recv_param_t *param);
-
-        // Memory management helpers
-        nixl_status_t internalMDHelper (const nixl_blob_t &blob,
-                                        const std::string &agent,
-                                        nixlBackendMD* &output);
 
         // Notifications
         static ucs_status_t notifAmCb(void *arg, const void *header,

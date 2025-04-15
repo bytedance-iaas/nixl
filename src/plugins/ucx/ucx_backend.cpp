@@ -16,37 +16,27 @@
  */
 #include "ucx_backend.h"
 #include "serdes/serdes.h"
-
-#ifdef HAVE_CUDA
-
-#include <cuda_runtime.h>
-#include <cufile.h>
-
-#endif
-
-
-
-/****************************************
- * CUDA related code
- *****************************************/
+#include <cassert>
 
 class nixlUcxCudaCtx {
 public:
 #ifdef HAVE_CUDA
     CUcontext pthrCudaCtx;
-    int myDevId;
 
     nixlUcxCudaCtx() {
         pthrCudaCtx = NULL;
-        myDevId = -1;
     }
 #endif
     void cudaResetCtxPtr();
-    int cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated);
+    int cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated,int world_size,int local_rank);
     int cudaSetCtx();
 };
 
 #ifdef HAVE_CUDA
+
+/****************************************
+ * CUDA related code
+*****************************************/
 
 static int cudaQueryAddr(void *address, bool &is_dev,
                          CUdevice &dev, CUcontext &ctx)
@@ -74,22 +64,15 @@ static int cudaQueryAddr(void *address, bool &is_dev,
     return (CUDA_SUCCESS != result);
 }
 
-int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated)
+int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated,int world_size,int local_rank)
 {
     bool is_dev;
     CUdevice dev;
     CUcontext ctx;
     int ret;
+    int node_rank;
 
     was_updated = false;
-
-    /* TODO: proper error codes and log outputs through this method */
-    if (expected_dev == -1)
-        return -1;
-
-    // incorrect dev id from first registration
-    if (myDevId != -1 && expected_dev != myDevId)
-        return -1;
 
     ret = cudaQueryAddr(address, is_dev, dev, ctx);
     if (ret) {
@@ -99,23 +82,31 @@ int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_
     if (!is_dev) {
         return 0;
     }
+    std::cout<<"expected_dev+"<<expected_dev<<std::endl;
+    if(local_rank!=expected_dev){
+        node_rank=world_size/2;
+        expected_dev-=node_rank;
+    }
+    std::cout<<"expected_dev+"<<expected_dev<<"dev+"<<dev<<std::endl;
 
+    assert(dev == expected_dev);
     if (dev != expected_dev) {
-        // User provided address that does not match dev_id
+        /* TODO: proper error codes */
         return -1;
     }
 
     if (pthrCudaCtx) {
-        // Context was already set previously, and does not match new context
+        // Context was already set previously
+        assert(pthrCudaCtx == ctx);
         if (pthrCudaCtx != ctx) {
-            return -1;
+            // Fatal error
+            abort();
         }
         return 0;
     }
 
     pthrCudaCtx = ctx;
     was_updated = true;
-    myDevId = expected_dev;
 
     return 0;
 }
@@ -134,7 +125,7 @@ int nixlUcxCudaCtx::cudaSetCtx()
 
 #else
 
-int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated)
+int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated,int world_size,int local_rank)
 {
     was_updated = false;
     return 0;
@@ -152,7 +143,7 @@ void nixlUcxEngine::vramInitCtx()
     cudaCtx = new nixlUcxCudaCtx;
 }
 
-int nixlUcxEngine::vramUpdateCtx(void *address, uint32_t  devId, bool &restart_reqd)
+int nixlUcxEngine::vramUpdateCtx(void *address, uint32_t  devId, bool &restart_reqd,uint32_t  world_size,uint32_t  local_rank)
 {
     int ret;
     bool was_updated;
@@ -164,7 +155,8 @@ int nixlUcxEngine::vramUpdateCtx(void *address, uint32_t  devId, bool &restart_r
         return 0;
     }
 
-    ret = cudaCtx->cudaUpdateCtxPtr(address, devId, was_updated);
+    ret = cudaCtx->cudaUpdateCtxPtr(address, devId, was_updated,world_size,local_rank);
+    assert(!ret);
     if (ret) {
         return ret;
     }
@@ -565,9 +557,8 @@ nixl_status_t nixlUcxEngine::registerMem (const nixlBlobDesc &mem,
 
     if (nixl_mem == VRAM_SEG) {
         bool need_restart;
-        if (vramUpdateCtx((void*)mem.addr, mem.devId, need_restart)) {
-            return NIXL_ERR_NOT_SUPPORTED;
-            //TODO Add to logging
+        if (vramUpdateCtx((void*)mem.addr, mem.devId, need_restart,mem.world_size,mem.local_rank)){
+            //TODO Log out
         }
         if (need_restart) {
             progressThreadRestart();
@@ -605,20 +596,17 @@ nixl_status_t nixlUcxEngine::getPublicData (const nixlBackendMD* meta,
     return NIXL_SUCCESS;
 }
 
-
-// To be cleaned up
-nixl_status_t
-nixlUcxEngine::internalMDHelper (const nixl_blob_t &blob,
-                                 const std::string &agent,
-                                 nixlBackendMD* &output) {
+nixl_status_t nixlUcxEngine::loadLocalMD (nixlBackendMD* input,
+                                          nixlBackendMD* &output) {
     nixlUcxConnection conn;
+    nixlUcxPrivateMetadata* input_md = (nixlUcxPrivateMetadata*) input;
     nixlUcxPublicMetadata *md = new nixlUcxPublicMetadata;
-     size_t size = blob.size();
 
-    auto search = remoteConnMap.find(agent);
+    //look up our own name
+    auto search = remoteConnMap.find(localAgent);
 
     if(search == remoteConnMap.end()) {
-        //TODO: err: remote connection not found
+        //TODO: something wrong, local connection should have been established
         return NIXL_ERR_NOT_FOUND;
     }
     conn = (nixlUcxConnection) search->second;
@@ -626,10 +614,47 @@ nixlUcxEngine::internalMDHelper (const nixl_blob_t &blob,
     //directly copy underlying conn struct
     md->conn = conn;
 
+    size_t size = input_md->rkeyStr.size();
     char *addr = new char[size];
-    nixlSerDes::_stringToBytes(addr, blob, size);
+    nixlSerDes::_stringToBytes(addr, input_md->rkeyStr, size);
 
     int ret = uw->rkeyImport(conn.ep, addr, size, md->rkey);
+    if (ret) {
+        // TODO: error out. Should we indicate which desc failed or unroll everything prior
+        return NIXL_ERR_BACKEND;
+    }
+
+    output = (nixlBackendMD*) md;
+
+    delete[] addr;
+
+    return NIXL_SUCCESS;
+}
+
+// To be cleaned up
+nixl_status_t nixlUcxEngine::loadRemoteMD (const nixlBlobDesc &input,
+                                           const nixl_mem_t &nixl_mem,
+                                           const std::string &remote_agent,
+                                           nixlBackendMD* &output) {
+    size_t size = input.metaInfo.size();
+    char *addr = new char[size];
+    int ret;
+    nixlUcxConnection conn;
+
+    nixlUcxPublicMetadata *md = new nixlUcxPublicMetadata;
+
+    auto search = remoteConnMap.find(remote_agent);
+
+    if(search == remoteConnMap.end()) {
+        //TODO: err: remote connection not found
+        return NIXL_ERR_NOT_FOUND;
+    }
+    conn = (nixlUcxConnection) search->second;
+
+    nixlSerDes::_stringToBytes(addr, input.metaInfo, size);
+
+    md->conn = conn;
+    ret = uw->rkeyImport(conn.ep, addr, size, md->rkey);
     if (ret) {
         // TODO: error out. Should we indicate which desc failed or unroll everything prior
         return NIXL_ERR_BACKEND;
@@ -639,23 +664,6 @@ nixlUcxEngine::internalMDHelper (const nixl_blob_t &blob,
     delete[] addr;
 
     return NIXL_SUCCESS;
-}
-
-nixl_status_t
-nixlUcxEngine::loadLocalMD (nixlBackendMD* input,
-                            nixlBackendMD* &output)
-{
-    nixlUcxPrivateMetadata* input_md = (nixlUcxPrivateMetadata*) input;
-    return internalMDHelper(input_md->rkeyStr, localAgent, output);
-}
-
-// To be cleaned up
-nixl_status_t nixlUcxEngine::loadRemoteMD (const nixlBlobDesc &input,
-                                           const nixl_mem_t &nixl_mem,
-                                           const std::string &remote_agent,
-                                           nixlBackendMD* &output)
-{
-    return internalMDHelper(input.metaInfo, remote_agent, output);
 }
 
 nixl_status_t nixlUcxEngine::unloadMD (nixlBackendMD* input) {

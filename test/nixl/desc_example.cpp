@@ -34,7 +34,7 @@ void testPerf(){
     gettimeofday(&start_time, NULL);
 
     for(int i = 0; i<desc_count; i++)
-        dlist.addDesc(nixlBasicDesc((uintptr_t) buf, 256, 0));
+        dlist.addDesc(nixlBasicDesc((uintptr_t) buf, 256, 0,1,0));
 
     gettimeofday(&end_time, NULL);
 
@@ -48,12 +48,12 @@ void testPerf(){
     std::cout << "time per desc " << time_per_desc << "us\n";
 
 
-    nixl_xfer_dlist_t dlist2 (DRAM_SEG, false, desc_count);
+    nixl_xfer_dlist_t dlist2 (DRAM_SEG, false, false, desc_count);
 
     gettimeofday(&start_time, NULL);
 
     for(int i = 0; i<desc_count; i++)
-        dlist2[i] = nixlBasicDesc((uintptr_t) buf, 256, 0);
+        dlist2[i] = nixlBasicDesc((uintptr_t) buf, 256, 0,1,0);
 
     gettimeofday(&end_time, NULL);
 
@@ -77,15 +77,15 @@ int main()
     buff1.len    = 105;
     buff1.devId  = 0;
 
-    nixlBasicDesc buff2 (2000,23,3);
+    nixlBasicDesc buff2 (2000,23,3,5,3);
     nixlBasicDesc buff3 (buff2);
     nixlBasicDesc buff4;
     buff4 = buff1;
     buff4.copyMeta (buff2);
-    nixlBasicDesc buff5 (1980,21,3);
-    nixlBasicDesc buff6 (1010,30,4);
-    nixlBasicDesc buff7 (1010,30,0);
-    nixlBasicDesc buff8 (1010,31,0);
+    nixlBasicDesc buff5 (1980,21,3,5,3);
+    nixlBasicDesc buff6 (1010,30,4,5,4);
+    nixlBasicDesc buff7 (1010,30,0,5,0);
+    nixlBasicDesc buff8 (1010,31,0,5,0);
 
     nixlBasicDesc importDesc(buff2.serialize());
     assert(buff2 == importDesc);
@@ -160,8 +160,8 @@ int main()
 
     // DescList functionality
     std::cout << "\n\n";
-    nixlMetaDesc meta3 (10070, 43, 0);
-    nixlMetaDesc meta4 (10070, 42, 0);
+    nixlMetaDesc meta3 (10070, 43, 0,1,0);
+    nixlMetaDesc meta4 (10070, 42, 0,1,0);
     meta3.metadataP = nullptr;
     meta4.metadataP = nullptr;
     int dummy;
@@ -193,27 +193,15 @@ int main()
     dlist4.print();
     dlist5.print();
 
-    try {
-        dlist1.remDesc(2);
-    } catch (const std::out_of_range& e) {
-        std::cout << "Caught expected error: " << e.what() << std::endl;
-    }
+    assert(dlist1.remDesc(2)== NIXL_ERR_INVALID_PARAM);
     std::cout << dlist1.getIndex(meta3) << "\n";
     dlist1.remDesc(0);
     std::cout << dlist1.getIndex(meta3) << "\n";
-    try {
-        dlist2.remDesc(dlist2.getIndex(meta1));
-    } catch (const std::out_of_range& e) {
-        std::cout << "Caught expected error: " << e.what() << std::endl;
-    }
+    assert(dlist2.remDesc(dlist2.getIndex(meta1))== NIXL_ERR_INVALID_PARAM);
     dlist2.remDesc(dlist2.getIndex(meta3));
     assert(dlist2.getIndex(meta3)== NIXL_ERR_NOT_FOUND);
     assert(dlist3.getIndex(meta1)== NIXL_ERR_NOT_FOUND);
-    try {
-        dlist3.remDesc(dlist3.getIndex(meta4));
-    } catch (const std::out_of_range& e) {
-        std::cout << "Caught expected error: " << e.what() << std::endl;
-    }
+    assert (dlist3.remDesc(dlist3.getIndex(meta4))== NIXL_ERR_INVALID_PARAM);
 
     dlist1.print();
     dlist2.print();
@@ -221,29 +209,29 @@ int main()
 
     // Populate and unifiedAddr test
     std::cout << "\n\n";
-    nixlBlobDesc s1 (10070, 43, 0);
+    nixlBlobDesc s1 (10070, 43, 0,5,0);
     s1.metaInfo = "s1";
-    nixlBlobDesc s2 (900, 43, 2);
+    nixlBlobDesc s2 (900, 43, 2,5,2);
     s2.metaInfo = "s2";
-    nixlBlobDesc s3 (500, 43, 1);
+    nixlBlobDesc s3 (500, 43, 1,5,1);
     s3.metaInfo = "s3";
-    nixlBlobDesc s4 (100, 43, 3);
+    nixlBlobDesc s4 (100, 43, 3,5,3);
     s4.metaInfo = "s4";
 
-    nixlBasicDesc b1 (10075, 30, 0);
-    nixlBasicDesc b2 (905, 30, 2);
-    nixlBasicDesc b3 (505, 30, 1);
-    nixlBasicDesc b4 (105, 30, 3);
-    nixlBasicDesc b5 (305, 30, 4);
-    nixlBasicDesc b6 (100, 30, 3);
+    nixlBasicDesc b1 (10075, 30, 0,5,0);
+    nixlBasicDesc b2 (905, 30, 2,5,2);
+    nixlBasicDesc b3 (505, 30, 1,5,1);
+    nixlBasicDesc b4 (105, 30, 3,5,3);
+    nixlBasicDesc b5 (305, 30, 4,5,4);
+    nixlBasicDesc b6 (100, 30, 3,5,3);
 
-    nixl_xfer_dlist_t dlist10 (DRAM_SEG, false);
-    nixl_xfer_dlist_t dlist11 (DRAM_SEG, true);
-    nixl_xfer_dlist_t dlist12 (DRAM_SEG, true);
-    nixl_xfer_dlist_t dlist13 (DRAM_SEG, true);
-    nixl_xfer_dlist_t dlist14 (DRAM_SEG, true);
+    nixl_xfer_dlist_t dlist10 (DRAM_SEG, false, false);
+    nixl_xfer_dlist_t dlist11 (DRAM_SEG, false, true);
+    nixl_xfer_dlist_t dlist12 (DRAM_SEG, true,  true);
+    nixl_xfer_dlist_t dlist13 (DRAM_SEG, true,  true);
+    nixl_xfer_dlist_t dlist14 (DRAM_SEG, true,  true);
 
-    nixl_reg_dlist_t dlist20 (DRAM_SEG, true);
+    nixl_reg_dlist_t dlist20 (DRAM_SEG, false,  true);
 
     dlist10.addDesc(b1);
     dlist10.addDesc(b2);
@@ -301,11 +289,11 @@ int main()
     importSList.print();
     std::cout << "\n";
 
-    nixl_reg_dlist_t dlist21 (DRAM_SEG, false);
-    nixl_reg_dlist_t dlist22 (DRAM_SEG, false);
-    nixl_reg_dlist_t dlist23 (DRAM_SEG, false);
-    nixl_reg_dlist_t dlist24 (DRAM_SEG, false);
-    nixl_reg_dlist_t dlist25 (DRAM_SEG, false);
+    nixl_reg_dlist_t dlist21 (DRAM_SEG, false,  false);
+    nixl_reg_dlist_t dlist22 (DRAM_SEG, false,  false);
+    nixl_reg_dlist_t dlist23 (DRAM_SEG, true,  false);
+    nixl_reg_dlist_t dlist24 (DRAM_SEG, true,  false);
+    nixl_reg_dlist_t dlist25 (DRAM_SEG, true,  false);
 
     dlist20.populate (dlist10, dlist21);
     dlist20.populate (dlist11, dlist22);
