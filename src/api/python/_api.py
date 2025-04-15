@@ -689,7 +689,7 @@ class nixl_agent:
         if isinstance(descs, nixlBind.nixlRegDList):
             return descs
         elif isinstance(descs[0], tuple):
-            if mem_type is not None and len(descs[0]) == 4:
+            if mem_type is not None and len(descs[0]) == 6:
                 new_descs = nixlBind.nixlRegDList(
                     self.nixl_mems[mem_type], descs, is_sorted
                 )
