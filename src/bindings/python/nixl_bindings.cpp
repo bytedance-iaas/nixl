@@ -171,7 +171,7 @@ PYBIND11_MODULE(_bindings, m) {
         .def(py::init([](nixl_mem_t mem, std::vector<py::tuple> descs, bool sorted) {
                 nixl_xfer_dlist_t new_list(mem, sorted, descs.size());
                 for(long unsigned int i = 0; i<descs.size(); i++)
-                    new_list[i] = nixlBasicDesc(descs[i][0].cast<uintptr_t>(), descs[i][1].cast<size_t>(), descs[i][2].cast<uint64_t>());
+                    new_list[i] = nixlBasicDesc(descs[i][0].cast<uintptr_t>(), descs[i][1].cast<size_t>(), descs[i][2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
                 if (sorted) new_list.verifySorted();
                 return new_list;
             }), py::arg("type"), py::arg("descs"), py::arg("sorted")=false)
@@ -190,17 +190,17 @@ PYBIND11_MODULE(_bindings, m) {
                     return ret;
               })
         .def("__setitem__", [](nixl_xfer_dlist_t &list, unsigned int i, const py::tuple &desc) {
-                list[i] = nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>());
+                list[i] = nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
             })
         .def("addDesc", [](nixl_xfer_dlist_t &list, const py::tuple &desc) {
-                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>()));
+                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS));
             })
         .def("append", [](nixl_xfer_dlist_t &list, const py::tuple &desc) {
-                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>()));
+                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS));
             })
         .def("index", [](nixl_xfer_dlist_t &list, const py::tuple &desc) {
                 int ret = (nixl_status_t) list.getIndex(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(),
-                                                  desc[2].cast<uint64_t>()));
+                                                  desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS));
                 if(ret < 0) throw_nixl_exception((nixl_status_t) ret);
                 return (int) ret;
             })

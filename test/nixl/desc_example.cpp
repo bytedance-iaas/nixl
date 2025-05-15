@@ -34,7 +34,7 @@ void testPerf(){
     gettimeofday(&start_time, NULL);
 
     for(int i = 0; i<desc_count; i++)
-        dlist.addDesc(nixlBasicDesc((uintptr_t) buf, 256, 0));
+        dlist.addDesc(nixlBasicDesc((uintptr_t) buf, 256, 0, 0, 1));
 
     gettimeofday(&end_time, NULL);
 
@@ -53,7 +53,7 @@ void testPerf(){
     gettimeofday(&start_time, NULL);
 
     for(int i = 0; i<desc_count; i++)
-        dlist2[i] = nixlBasicDesc((uintptr_t) buf, 256, 0);
+        dlist2[i] = nixlBasicDesc((uintptr_t) buf, 256, 0, 0, 1);
 
     gettimeofday(&end_time, NULL);
 
@@ -220,21 +220,17 @@ int main()
 
     // Populate and unifiedAddr test
     std::cout << "\n\n";
-    nixlBlobDesc s1 (10070, 43, 0);
-    s1.metaInfo = "s1";
-    nixlBlobDesc s2 (900, 43, 2);
-    s2.metaInfo = "s2";
-    nixlBlobDesc s3 (500, 43, 1);
-    s3.metaInfo = "s3";
-    nixlBlobDesc s4 (100, 43, 3);
-    s4.metaInfo = "s4";
+    nixlBlobDesc s1(10070, 43, 0, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS, "s1");
+    nixlBlobDesc s2(900, 43, 2, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS, "s2");
+    nixlBlobDesc s3(500, 43, 1, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS, "s3");
+    nixlBlobDesc s4(100, 43, 3, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS, "s4");
 
-    nixlBasicDesc b1 (10075, 30, 0);
-    nixlBasicDesc b2 (905, 30, 2);
-    nixlBasicDesc b3 (505, 30, 1);
-    nixlBasicDesc b4 (105, 30, 3);
-    nixlBasicDesc b5 (305, 30, 4);
-    nixlBasicDesc b6 (100, 30, 3);
+    nixlBasicDesc b1 (10075, 30, 0, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc b2 (905, 30, 2, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc b3 (505, 30, 1, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc b4 (105, 30, 3, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc b5 (305, 30, 4, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc b6 (100, 30, 3, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
 
     nixl_xfer_dlist_t dlist10 (DRAM_SEG, false);
     nixl_xfer_dlist_t dlist11 (DRAM_SEG, true);

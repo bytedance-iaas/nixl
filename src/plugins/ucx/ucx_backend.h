@@ -101,7 +101,26 @@ class nixlUcxPublicMetadata : public nixlBackendMD {
 // Once we will introduce static config (i.e. config.h) that
 // will be part of NIXL installation - we can have
 // HAVE_CUDA in h-files
-class nixlUcxCudaCtx;
+class nixlUcxCudaCtx {
+public:
+#ifdef HAVE_CUDA
+    CUcontext pthrCudaCtx;
+    int myDevId;
+    int globalDevId;
+    int nodeNums;
+
+    nixlUcxCudaCtx() {
+        pthrCudaCtx = NULL;
+        myDevId = -1;
+        globalDevId = -1;
+        nodeNums = -1;
+    }
+#endif
+    void cudaResetCtxPtr();
+    int cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated, int global_dev_id, int node_nums);
+    int cudaSetCtx();
+};
+
 class nixlUcxEngine : public nixlBackendEngine {
     private:
         /* UCX data */
