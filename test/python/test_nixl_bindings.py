@@ -15,7 +15,6 @@
 
 import pickle
 
-import pytest
 
 import nixl._bindings as nixl
 import nixl._utils as nixl_utils
