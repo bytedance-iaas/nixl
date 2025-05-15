@@ -171,7 +171,7 @@ PYBIND11_MODULE(_bindings, m) {
         .def(py::init([](nixl_mem_t mem, std::vector<py::tuple> descs, bool sorted) {
                 nixl_xfer_dlist_t new_list(mem, sorted, descs.size());
                 for(long unsigned int i = 0; i<descs.size(); i++)
-                    new_list[i] = nixlBasicDesc(descs[i][0].cast<uintptr_t>(), descs[i][1].cast<size_t>(), descs[i][2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+                    new_list[i] = nixlBasicDesc(descs[i][0].cast<uintptr_t>(), descs[i][1].cast<size_t>(), descs[i][2].cast<uint64_t>());
                 if (sorted) new_list.verifySorted();
                 return new_list;
             }), py::arg("type"), py::arg("descs"), py::arg("sorted")=false)
@@ -190,17 +190,17 @@ PYBIND11_MODULE(_bindings, m) {
                     return ret;
               })
         .def("__setitem__", [](nixl_xfer_dlist_t &list, unsigned int i, const py::tuple &desc) {
-                list[i] = nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+                list[i] = nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>());
             })
         .def("addDesc", [](nixl_xfer_dlist_t &list, const py::tuple &desc) {
-                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS));
+                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>()));
             })
         .def("append", [](nixl_xfer_dlist_t &list, const py::tuple &desc) {
-                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS));
+                list.addDesc(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(), desc[2].cast<uint64_t>()));
             })
         .def("index", [](nixl_xfer_dlist_t &list, const py::tuple &desc) {
                 int ret = (nixl_status_t) list.getIndex(nixlBasicDesc(desc[0].cast<uintptr_t>(), desc[1].cast<size_t>(),
-                                                  desc[2].cast<uint64_t>(), NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS));
+                                                  desc[2].cast<uint64_t>()));
                 if(ret < 0) throw_nixl_exception((nixl_status_t) ret);
                 return (int) ret;
             })
@@ -232,9 +232,9 @@ PYBIND11_MODULE(_bindings, m) {
                         descs[i][0].cast<uintptr_t>(),
                         descs[i][1].cast<size_t>(),
                         descs[i][2].cast<uint64_t>(),
-                        NIXL_DEFAULT_GLOBAL_DEVID,
-                        NIXL_DEFAULT_NODE_NUMS,
-                        descs[i][3].cast<std::string>());
+                        descs[i][3].cast<std::string>(),
+                        descs[i][4].cast<uint64_t>(),
+                        descs[i][5].cast<uint64_t>());
                 if (sorted) new_list.verifySorted();
                 return new_list;
             }), py::arg("type"), py::arg("descs"), py::arg("sorted")=false)
@@ -258,36 +258,36 @@ PYBIND11_MODULE(_bindings, m) {
                     desc[0].cast<uintptr_t>(),
                     desc[1].cast<size_t>(),
                     desc[2].cast<uint64_t>(),
-                    NIXL_DEFAULT_GLOBAL_DEVID,
-                    NIXL_DEFAULT_NODE_NUMS,
-                    desc[3].cast<std::string>());
+                    desc[3].cast<std::string>(),
+                    desc[4].cast<uint64_t>(),
+                    desc[5].cast<uint64_t>());
             })
         .def("addDesc", [](nixl_reg_dlist_t &list, const py::tuple &desc) {
                 list.addDesc(nixlBlobDesc(
                     desc[0].cast<uintptr_t>(),
                     desc[1].cast<size_t>(),
                     desc[2].cast<uint64_t>(),
-                    NIXL_DEFAULT_GLOBAL_DEVID,
-                    NIXL_DEFAULT_NODE_NUMS,
-                    desc[3].cast<std::string>()));
+                    desc[3].cast<std::string>(),
+                    desc[4].cast<uint64_t>(),
+                    desc[5].cast<uint64_t>()));
             })
         .def("append", [](nixl_reg_dlist_t &list, const py::tuple &desc) {
                 list.addDesc(nixlBlobDesc(
                     desc[0].cast<uintptr_t>(),
                     desc[1].cast<size_t>(),
                     desc[2].cast<uint64_t>(),
-                    NIXL_DEFAULT_GLOBAL_DEVID,
-                    NIXL_DEFAULT_NODE_NUMS,
-                    desc[3].cast<std::string>()));
+                    desc[3].cast<std::string>(),
+                    desc[4].cast<uint64_t>(),
+                    desc[5].cast<uint64_t>()));
             })
         .def("index", [](nixl_reg_dlist_t &list, const py::tuple &desc) {
                 int ret = list.getIndex(nixlBlobDesc(
                     desc[0].cast<uintptr_t>(),
                     desc[1].cast<size_t>(),
                     desc[2].cast<uint64_t>(),
-                    NIXL_DEFAULT_GLOBAL_DEVID,
-                    NIXL_DEFAULT_NODE_NUMS,
-                    desc[3].cast<std::string>()));
+                    desc[3].cast<std::string>(),
+                    desc[4].cast<uint64_t>(),
+                    desc[5].cast<uint64_t>()));
                 if(ret < 0) throw_nixl_exception((nixl_status_t) ret);
                 return ret;
             })

@@ -105,9 +105,9 @@ void nixlBasicDesc::print(const std::string &suffix) const {
 nixlBlobDesc::nixlBlobDesc(const uintptr_t &addr,
                            const size_t &len,
                            const uint64_t &dev_id,
+                           const nixl_blob_t &meta_info,
                            const uint64_t &global_dev_id,
-                           const uint32_t &node_nums,
-                           const nixl_blob_t &meta_info)
+                           const uint32_t &node_nums)
     : nixlBasicDesc(addr, len, dev_id, global_dev_id, node_nums) {
     this->metaInfo = meta_info;
 }
