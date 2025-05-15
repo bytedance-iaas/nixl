@@ -35,26 +35,6 @@ static constexpr int const noSyncIters = 32;
  * CUDA related code
  *****************************************/
 
-class nixlUcxCudaCtx {
-public:
-#ifdef HAVE_CUDA
-    CUcontext pthrCudaCtx;
-    int myDevId;
-    int globalDevId;
-    int nodeNums;
-
-    nixlUcxCudaCtx() {
-        pthrCudaCtx = NULL;
-        myDevId = -1;
-        globalDevId = -1;
-        nodeNums = -1;
-    }
-#endif
-    void cudaResetCtxPtr();
-    int cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated, int global_dev_id, int node_nums);
-    int cudaSetCtx();
-};
-
 #ifdef HAVE_CUDA
 
 static int cudaQueryAddr(void *address, bool &is_dev,
@@ -160,7 +140,7 @@ int nixlUcxCudaCtx::cudaSetCtx()
 
 #else
 
-int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated)
+int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_updated, int global_dev_id, int node_nums)
 {
     was_updated = false;
     return 0;

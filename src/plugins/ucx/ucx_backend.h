@@ -35,6 +35,10 @@
 #include "ucx/ucx_utils.h"
 #include "common/list_elem.h"
 
+#ifdef HAVE_CUDA
+#include <cuda.h>
+#endif
+
 enum ucx_cb_op_t {CONN_CHECK, NOTIF_STR, DISCONNECT};
 
 struct nixl_ucx_am_hdr {

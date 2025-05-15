@@ -63,8 +63,7 @@ class nixlBasicDesc {
                       const size_t &len,
                       const uint64_t &dev_id,
                       const uint64_t &global_dev_id,
-                      const uint32_t &node_nums)
-            : addr(addr), len(len), devId(dev_id), globalDevId(global_dev_id), nodeNums(node_nums) {}
+                      const uint32_t &node_nums);
         /**
          * @brief Deserializer constructor for nixlBasicDesc with
          *        serialized blob of another nixlBasicDesc
@@ -113,6 +112,7 @@ class nixlBasicDesc {
         /**
          * @brief Check if current object address range covers the input object's
          *
+         * 
          * @param query   nixlBasicDesc object
          */
         bool covers (const nixlBasicDesc &query) const;

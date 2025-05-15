@@ -77,14 +77,14 @@ int main()
     buff1.len    = 105;
     buff1.devId  = 0;
 
-    nixlBasicDesc buff2 (2000,23,3);
+    nixlBasicDesc buff2 (2000,23,3, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
     nixlBasicDesc buff3 (buff2);
     nixlBasicDesc buff4;
     buff4 = buff1;
-    nixlBasicDesc buff5 (1980,21,3);
-    nixlBasicDesc buff6 (1010,30,4);
-    nixlBasicDesc buff7 (1010,30,0);
-    nixlBasicDesc buff8 (1010,31,0);
+    nixlBasicDesc buff5 (1980,21,3, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc buff6 (1010,30,4, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc buff7 (1010,30,0, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlBasicDesc buff8 (1010,31,0, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
 
     nixlBasicDesc importDesc(buff2.serialize());
     assert(buff2 == importDesc);
@@ -159,8 +159,8 @@ int main()
 
     // DescList functionality
     std::cout << "\n\n";
-    nixlMetaDesc meta3 (10070, 43, 0);
-    nixlMetaDesc meta4 (10070, 42, 0);
+    nixlMetaDesc meta3 (10070, 43, 0, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
+    nixlMetaDesc meta4 (10070, 42, 0, NIXL_DEFAULT_GLOBAL_DEVID, NIXL_DEFAULT_NODE_NUMS);
     meta3.metadataP = nullptr;
     meta4.metadataP = nullptr;
     int dummy;
