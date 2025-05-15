@@ -80,7 +80,7 @@ int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_
     if (myDevId != -1 && expected_dev != myDevId)
         return -1;
 
-    // 校验 global_dev_id 和 node_nums
+
     if (globalDevId != -1 && global_dev_id != globalDevId)
         return -1;
     if (nodeNums != -1 && node_nums != nodeNums)
@@ -97,11 +97,9 @@ int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_
         return 0;
     }
     
-    // 新增：根据node_nums和global_dev_id计算local_dev并校验
     if (node_nums > 1 && global_dev_id >= 0) {
         int local_dev = global_dev_id % node_nums;
         if (dev != local_dev) {
-            // global_dev_id 与本地 CUDA 设备号不匹配
             return -1;
         }
     } else {
