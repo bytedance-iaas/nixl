@@ -96,7 +96,7 @@ int nixlUcxCudaCtx::cudaUpdateCtxPtr(void *address, int expected_dev, bool &was_
     if (!is_dev) {
         return 0;
     }
-    
+
     if (node_nums > 1 && global_dev_id >= 0) {
         int local_dev = global_dev_id % node_nums;
         if (dev != local_dev) {

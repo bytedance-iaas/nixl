@@ -289,3 +289,391 @@
  15-05-2025 19:56:51:373 [pid=1858823 tid=1858823] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
  15-05-2025 19:56:51:373 [pid=1858823 tid=1858823] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
  15-05-2025 19:56:51:373 [pid=1858823 tid=1858823] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:71 [pid=1866596 tid=1866596] NOTICE  cufio-drv:727 running in compatible mode
+ 15-05-2025 20:03:38:381 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:381 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:381 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:397 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:397 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:397 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:417 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:417 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:417 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:435 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:435 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:435 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:452 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:452 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:452 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:471 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:471 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:471 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:496 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:496 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:496 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:513 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:513 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:513 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:531 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:531 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:531 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:545 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:545 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:545 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:564 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:564 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:564 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:580 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:580 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:580 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:607 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:607 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:607 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:623 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:623 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:623 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:639 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:639 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:639 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:656 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:656 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:656 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:672 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:672 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:672 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:688 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:688 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:688 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:703 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:703 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:703 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:716 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:716 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:716 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:726 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:726 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:726 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:744 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:744 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:744 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:758 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:758 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:758 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:770 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:770 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:770 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:788 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:788 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:788 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:806 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:806 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:806 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:826 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:826 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:826 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:847 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:847 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:847 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:866 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:866 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:866 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:881 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:881 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:881 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:898 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:898 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:898 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:38:916 [pid=1866596 tid=1866596] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:916 [pid=1866596 tid=1866596] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:38:916 [pid=1866596 tid=1866596] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:39 [pid=1867160 tid=1867160] NOTICE  cufio-drv:727 running in compatible mode
+ 15-05-2025 20:03:58:354 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:354 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:354 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:375 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:375 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:375 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:392 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:392 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:392 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:408 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:408 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:408 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:424 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:424 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:424 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:440 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:440 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:440 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:456 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:456 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:456 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:472 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:472 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:472 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:490 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:490 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:490 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:508 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:508 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:508 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:523 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:523 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:523 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:539 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:539 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:539 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:561 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:561 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:561 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:575 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:575 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:575 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:593 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:593 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:593 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:614 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:614 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:614 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:631 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:631 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:631 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:649 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:649 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:649 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:665 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:665 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:665 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:681 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:681 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:681 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:696 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:696 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:696 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:715 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:715 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:715 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:731 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:731 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:731 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:750 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:750 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:750 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:767 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:767 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:767 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:784 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:784 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:784 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:800 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:800 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:800 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:817 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:817 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:817 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:834 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:834 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:834 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:851 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:851 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:851 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:868 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:868 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:868 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:03:58:884 [pid=1867160 tid=1867160] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:884 [pid=1867160 tid=1867160] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:03:58:884 [pid=1867160 tid=1867160] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:15:763 [pid=1867575 tid=1867575] NOTICE  cufio-drv:727 running in compatible mode
+ 15-05-2025 20:04:16:74 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:74 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:74 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:93 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:93 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:93 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:107 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:107 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:107 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:119 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:119 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:119 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:132 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:132 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:132 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:149 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:149 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:149 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:163 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:163 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:163 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:182 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:182 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:182 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:196 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:196 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:196 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:213 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:213 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:213 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:235 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:235 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:235 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:253 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:253 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:253 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:270 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:270 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:270 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:287 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:287 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:287 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:306 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:306 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:306 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:324 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:324 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:324 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:340 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:340 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:340 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:360 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:360 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:360 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:376 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:376 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:376 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:393 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:393 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:393 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:414 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:414 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:414 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:432 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:432 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:432 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:446 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:446 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:446 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:460 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:460 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:460 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:478 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:478 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:478 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:503 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:503 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:503 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:521 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:521 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:521 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:548 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:548 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:548 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:565 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:565 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:565 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:582 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:582 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:582 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:599 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:599 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:599 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:16:615 [pid=1867575 tid=1867575] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:615 [pid=1867575 tid=1867575] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:16:615 [pid=1867575 tid=1867575] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:39:742 [pid=1867989 tid=1867989] NOTICE  cufio-drv:727 running in compatible mode
+ 15-05-2025 20:04:40:49 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:49 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:49 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:71 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:71 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:71 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:86 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:86 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:86 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:104 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:104 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:104 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:126 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:126 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:126 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:143 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:143 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:143 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:163 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:163 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:163 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:180 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:180 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:180 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:197 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:197 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:197 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:214 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:214 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:214 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:237 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:237 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:237 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:259 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:259 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:259 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:276 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:276 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:276 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:294 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:294 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:294 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:310 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:310 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:310 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:324 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:324 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:324 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:342 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:342 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:342 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:359 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:359 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:359 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:374 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:374 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:374 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:391 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:391 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:391 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:409 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:409 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:409 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:429 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:429 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:429 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:443 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:443 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:443 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:461 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:461 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:461 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:477 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:477 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:477 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:495 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:495 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:495 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:517 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:517 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:517 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:533 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:533 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:533 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:554 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:554 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:554 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:571 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:571 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:571 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:590 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:590 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:590 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later
+ 15-05-2025 20:04:40:605 [pid=1867989 tid=1867989] ERROR  0:324 Batch Ctx version mismatch in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:605 [pid=1867989 tid=1867989] ERROR  0:369 Did not find any valid context in cuFileBatchGetContextFromID
+ 15-05-2025 20:04:40:605 [pid=1867989 tid=1867989] ERROR  cufio_batch:2735 Batch state is not in IDLE state, try destroy later

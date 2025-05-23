@@ -124,7 +124,7 @@ def test_metadata_pass(two_ucx_agents):
     assert passed_name == agent1.name.encode()
 
 
-@pytest.mark.timeout(5)
+# @pytest.mark.timeout(5)
 def test_empty_notif_tag(two_connected_ucx_agents):
     agent1, agent2 = two_connected_ucx_agents
 

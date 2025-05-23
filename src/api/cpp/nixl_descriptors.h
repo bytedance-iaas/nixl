@@ -122,7 +122,7 @@ class nixlBasicDesc {
         /**
          * @brief Check if current object address range covers the input object's
          *
-         * 
+         *
          * @param query   nixlBasicDesc object
          */
         bool covers (const nixlBasicDesc &query) const;
@@ -148,7 +148,7 @@ class nixlBasicDesc {
         inline uint64_t getGlobalDevId() const { return globalDevId; }
         /**
          * @brief Set the global device ID
-         * 
+         *
          * @param id Global device ID to set
          */
         inline void setGlobalDevId(const uint64_t &id) { globalDevId = id; }
@@ -158,7 +158,7 @@ class nixlBasicDesc {
         inline uint32_t getNodeNums() const { return nodeNums; }
         /**
          * @brief Set the number of nodes
-         * 
+         *
          * @param nums Number of nodes to set
          */
         inline void setNodeNums(const uint32_t &nums) { nodeNums = nums; }
